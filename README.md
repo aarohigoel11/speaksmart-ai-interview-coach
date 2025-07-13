@@ -53,7 +53,7 @@
 
 ### 📊 Response Analysis
 <img src="./Screenshot 2025-07-13 165811.png" width="60%" alt="Score Example 1" />
-<img src="./Screenshot 2025-07-13 165811.png" width="60%" alt="Score Example 2" />
+
 
 
 ---
