@@ -1,79 +1,76 @@
-<!-- Banner -->
+<h1 align="center">🎤 SpeakSmart Interview</h1>
 <p align="center">
-  <img src=<img src="https://readme-animated-stats.vercel.app/api/banner?text=SpeakSmart%20🚀%20Your%20AI%20Interview%20Coach!&color=gradient&fontSize=35" />
-
+  <b>Practice. Analyze. Improve.</b><br>
+  An AI-powered mock interview platform for real-time technical speaking evaluation.
 </p>
 
-<h1 align="center">🎙️ SpeakSmart — AI-Powered Interview Coach 💼</h1>
-
 <p align="center">
-  <b>Crack your next interview with confidence!</b><br />
-  SpeakSmart is your intelligent personal coach that evaluates your answers, gives feedback, and builds confidence with real-time AI.
+  <img src="https://img.shields.io/badge/AI-Powered-blueviolet" />
+  <img src="https://img.shields.io/badge/Built%20With-Flask-blue" />
+  <img src="https://img.shields.io/badge/Frontend-HTML%2FCSS%20%7C%20JS-orange" />
 </p>
 
 ---
 
-## 🧠 What is SpeakSmart?
+## ✨ Features
 
-SpeakSmart is a smart web-based application that uses **Natural Language Processing (NLP)** and **Machine Learning** to:
-- 🗣️ Analyze your **interview answers**
-- 🤖 Understand the **context & quality**
-- 📊 Give you **confidence scores**
-- 💬 Offer **constructive feedback**
-
-All powered by a fine-tuned **sentence-transformer model** and a user-friendly interface!
+- 🎙️ Real-time voice input via mic
+- 🤖 Auto-generated technical questions
+- 🧠 Natural language understanding for response analysis
+- 📊 Instant scoring, confidence & feedback
+- 👩‍💻 Webcam support to simulate real interviews
 
 ---
 
-## 🚀 Features
+## 🧠 ML/NLP Pipeline Overview
 
-✅ Real-time API powered by Flask  
-✅ Trained ML model using `sentence-transformers`  
-✅ Similarity scoring and intelligent feedback  
-✅ Frontend + Backend ready integration  
-✅ Interview data based model training  
-✅ Full GitHub integration for continuous updates
-
----
-
-## 🏗️ Tech Stack
-
-| Area         | Tools / Frameworks                                    |
-|--------------|--------------------------------------------------------|
-| Frontend     | ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white) ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) |
-| Backend      | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white) |
-| ML Model     | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) ![Transformers](https://img.shields.io/badge/HuggingFace-FFD21F?style=flat&logo=huggingface&logoColor=black) |
-| Deployment   | Coming Soon! |
-| Version Ctrl | ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) |
+| Stage            | Tool/Technique                             | Description                                     |
+|------------------|--------------------------------------------|-------------------------------------------------|
+| 🎤 Voice Input   | WebRTC / MediaRecorder API                 | Capture candidate response                     |
+| 📄 Transcription | SpeechRecognition / Web Speech API         | Convert speech to text                         |
+| 🔍 NLP Analysis  | Custom ML model or OpenAI API              | Analyze content clarity, keywords, and intent  |
+| 📈 Scoring       | Rule-based + ML scoring model              | Generate score, confidence & feedback          |
 
 ---
 
-## 🧪 How It Works
+## 🧰 Tech Stack
 
-1. **User** answers a question on the frontend  
-2. **API** sends the response to backend  
-3. The **ML model** compares it to expert-level answers  
-4. It returns a **similarity score** and **feedback**  
-5. The frontend displays the result in real-time!
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-HTML%2FCSS%20%7C%20JavaScript-informational?logo=javascript" />
+  <img src="https://img.shields.io/badge/Backend-Flask-lightgrey?logo=python" />
+  <img src="https://img.shields.io/badge/ML-NLP%20%7C%20Scikit--Learn-yellow?logo=scikit-learn" />
+  <img src="https://img.shields.io/badge/Recording-WebRTC%20%7C%20MediaRecorder-orange?logo=webrtc" />
+  <img src="https://img.shields.io/badge/Model%20Storage-Joblib-green?logo=python" />
+  <img src="https://img.shields.io/badge/UI-Responsive-green?logo=bootstrap" />
+</p>
 
 ---
 
-## 🗃️ Project Structure
+## 📸 Screenshots
+
+### 💻 Interview UI
+<img src="./Screenshot 2025-07-13 170807.png" width="80%" alt="Interview UI Screenshot" />
+
+### 📊 Response Analysis
+<img src="./Screenshot 2025-07-13 165811.png" width="60%" alt="Score Example 1" />
+<img src="./Screenshot 2025-07-13 165811.png" width="60%" alt="Score Example 2" />
+
+
+---
+
+## 🛠️ Installation Guide
 
 ```bash
-SpeakSmart/
-│
-├── frontend/               # UI (HTML/CSS/JS)
-├── backend/                # Node.js/Express logic
-├── ml-model/               # ML model, training, inference
-│   ├── data/
-│   │   ├── model/
-│   │   │   ├── train.py
-│   │   │   ├── inference.py
-│   │   │   ├── api.py
-│   │   │   ├── utils.py
-│   │   │   └── trained_model/
-│   │   └── interview_data.csv
-│
-├── .gitignore
-└── README.md               # You're here 😄
+# 1. Clone the repository
+git clone https://github.com/your-username/speaksmart.git
+cd speaksmart
+
+# 2. Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the Flask server
+python app.py
